@@ -1,0 +1,146 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+
+\title{Taller II}
+\author{Iván Palomo}
+\date{20 de febrero de 2026}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{$|x^2-1|<x+1$}
+	
+	
+	
+	\medskip
+	Como $|x^2-1|\ge 0$, para que se cumpla
+	$|x^2-1|<x+1$ es necesario que $x+1>0$, es decir,
+	
+	$$
+	x>-1.
+	$$
+	
+	Si $x+1>0$, entonces
+	
+	
+	$$|x^2-1|<x+1 \iff -(x+1)<x^2-1<x+1.$$
+	
+	
+	Esto equivale a resolver:
+	
+	$$
+	\begin{cases}
+		x^2-1<x+1,\\
+		-(x+1)<x^2-1.
+	\end{cases}
+	$$
+	
+	Resolvemos cada desigualdad por separado:
+	\begin{align*}
+		x^2-1<x+1
+		&\iff x^2-x-2<0\\
+		&\iff (x-2)(x+1)<0\\
+		&\iff -1<x<2.
+	\end{align*}
+	
+	\begin{align*}
+		-(x+1)<x^2-1
+		&\iff -x-1<x^2-1\\
+		&\iff 0<x^2+x\\
+		&\iff x(x+1)>0\\
+		&\iff x<-1 \ \text{o}\ x>0.
+	\end{align*}
+	
+	Juntando $-1<x<2$, con $(x<-1)\lor(x>0)$ y además $x>-1$, obtenemos
+	
+	
+	$$
+	\boxed{ x\in(0,2)}
+	$$
+	
+	
+	\section{$x^3-x^2+2x-2<0$}
+	
+	Factorizando:
+	
+	$$
+	x^3-x^2+2x-2 =(x-1)(x^2+2)
+	$$
+	
+	Observamos que:
+	
+	$$
+	x^2+2>0 \quad \forall x\in\mathbb{R}
+	$$
+	
+	Por tanto, el signo depende solo de $(x-1)$.
+	
+	$$
+	(x-1)(x^2+2)<0 \iff x-1<0
+	$$
+	
+	$$
+	\boxed{x\in(-\infty , 1)}
+	$$
+	
+	
+	\section{$|x+3|+|x-1|\ge 5$}
+	
+	Los puntos críticos son $x=-3$ y $x=1$.
+	
+	\subsection*{Caso 1: $x\le -3$}
+	
+	$$
+	|x+3|=-(x+3),\quad |x-1|=-(x-1)
+	$$
+	
+	$$
+	|x+3|+|x-1|=-2x-2
+	$$
+	
+	$$
+	-2x-2\ge5 \iff x\le -\frac{7}{2}
+	$$
+	
+	\subsection*{Caso 2: $-3\le x\le 1$}
+	
+	$$
+	|x+3|+|x-1|=4
+	$$
+	
+	No hay soluciones en este intervalo, es decir,
+	
+	$$
+	\varnothing
+	$$
+	
+	\subsection*{Caso 3: $x\ge 1$}
+	
+	$$
+	|x+3|=x+3,\quad |x-1|=x-1
+	$$
+	
+	$$
+	|x+3|+|x-1|=2x+2
+	$$
+	
+	$$
+	2x+2\ge5 \iff x\ge \frac{3}{2}
+	$$
+	
+	
+	
+	Tomando la unión de los casos válidos:
+	
+	$$
+	\boxed{x\in(-\infty,-\tfrac{7}{2}] \cup [\tfrac{3}{2},\infty)}
+	$$
+	
+	
+	
+\end{document}

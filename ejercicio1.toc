@@ -1,0 +1,4 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}$|x^2-1|<x+1$}{2}{section.1}%
+\contentsline {section}{\numberline {2}$x^3-x^2+2x-2<0$}{2}{section.2}%
+\contentsline {section}{\numberline {3}$|x+3|+|x-1|\ge 5$}{3}{section.3}%
